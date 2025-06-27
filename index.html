@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Z Finance Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GenZ Finance</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expenses">Expenses</a></li>
+            <li><a href="#tips">Saving Tips</a></li>
+            <li><a href="#alerts">Budget Alerts</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Smarter Finance for Gen Z</h1>
+        <p>Track expenses, get savings advice, and stay financially fit with your personal AI finance buddy.</p>
+    </header>
+
+    <main>
+
+        <section class="intro-card" id="about">
+            <h2>Why Gen Z Needs This</h2>
+            <p>Managing money is tough with student loans, side gigs, and endless subscriptions. Our platform helps you stay on track.</p>
+        </section>
+
+        <section class="card" id="expenses">
+            <h2>Expense Tracker</h2>
+            <input type="text" id="expense-input" placeholder="Enter expense (e.g., Groceries ₹500)">
+            <button onclick="addExpense()">Add Expense</button>
+            <ul id="expense-list"></ul>
+            <progress id="progress-bar" max="1000" value="0"></progress>
+        </section>
+
+        <section class="tips-card" id="tips">
+            <h2>Saving Tips</h2>
+            <ul>
+                <li>Automate 10% of your income into savings.</li>
+                <li>Track subscriptions and cancel unused ones.</li>
+                <li>Use student discounts wherever possible.</li>
+                <li>Meal prep to cut daily food expenses.</li>
+            </ul>
+        </section>
+
+        <section class="alerts-card" id="alerts">
+            <h2>Budget Alerts</h2>
+            <ul>
+                <li>⚠️ You're nearing your entertainment budget.</li>
+                <li>✅ You've stayed under grocery budget this month.</li>
+                <li>⚠️ Your transport expenses exceeded limit.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Finance Chatbot</h2>
+            <div class="chat-container">
+                <div id="chat-window"></div>
+                <div class="input-area">
+                    <input type="text" id="chat-input" placeholder="Ask me anything about money...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 GenZ Finance. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
